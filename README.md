@@ -6,7 +6,9 @@ Portfolio of completed projects I worked on while attending the Business Intelli
 
 | Project number | Title | Description |
 | :-----------: | ----------- |----------- |
-| 1 | [Fresh Beats ](https://github.com/DrewThompson7/TripleTenProjects/edit/main/Fresh%20Beats%20Project) | The project task was
+| 1 | [Fresh Beats ](https://github.com/DrewThompson7/TripleTenProjects/edit/main/Fresh%20Beats%20Project) | The project task was to increase the return on investment for artists using Fresh Beats' promotional services.
+User engagement and conversion: Convert more free users into paying subscribers.
+Genre promotion for emerging artists: Improve the platform's recommendation system for promoting new artists
 | 2 | [New York Airbnb Project](https://github.com/DrewThompson7/TripleTenProjects/edit/main/NewYork%20Airbnb%20Project) | The project task was to consult a company on what types of properties they should be targeting in the Manhattan borough of New York City based on Airbnb listings and to present the findings via Spreadsheets. |
 | 3 | [E-commerce Company](https://github.com/DrewThompson7/TripleTenProjects/edit/main/E-commerce%20Comopany%20Project) | The project task was to analyze raw transaction logs and present findings via spreadsheet. | 
 | 4 | [SuperStore Consult](https://github.com/DrewThompson7/TripleTenProjects/edit/main/Superstore%20consult%20Project) | The project task was to consult on the stores' operations and increase profitability to avoid bankruptcy via Tableau. |
