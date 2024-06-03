@@ -1,0 +1,51 @@
+E-commerce Project Requirements Breakdown
+
+This project involves analyzing user activity data to understand website conversion and user retention for an e-commerce company. Here's a breakdown of the requirements by part:
+
+Part 1: Build a Conversion Funnel
+
+Use "raw_user_activity" data to create a conversion funnel (new sheet named "conversion_funnel") using a pivot table.
+Count unique users for each stage of the funnel (3 stages).
+Create formulas in the pivot table for:
+Total conversion rates
+Conversion rates to the next step (refer to "Overview of Funnels" lesson)
+Part 2: Prepare Data for Cohort Analysis
+
+Filter Purchases:
+Focus only on purchase events from "raw_user_activity".
+Create a new sheet "purchase_activity" and copy only purchase data from the filtered "raw_user_activity".
+Ensure there are 4,845 rows (including headers) in the new sheet.
+Reset the filter in "raw_user_activity".
+Calculate First Purchase Dates:
+Create a new sheet "first_purchase" using a pivot table from "purchase_activity" data.
+Calculate the minimum event_date for each user (represents first purchase date).
+Use VLOOKUP in "purchase_activity" sheet (column G) to find the first purchase date for each user ID from the "first_purchase" sheet.
+Set Up Monthly Data:
+Create new columns in "purchase_activity": event_month, first_purchase_month, cohort_age.
+Use TEXT function to create event_month and first_purchase_month in YYYY-MM format.
+Use DATEDIF function to create cohort_age (number of months between first purchase and event).
+Part 3: Calculate Retention Rates
+
+Group Data into Cohorts:
+Create a new sheet "cohort_analysis" using a pivot table from "purchase_activity" data.
+Configure the pivot table to show cohorts based on the month of first purchase (6 cohorts expected).
+The pivot table should also have the count of unique users for each cohort age in the columns.
+Calculate Overall Retention Rates:
+Create a new sheet "retention_rates".
+Add row labels for each cohort (A3:A7) matching "cohort_analysis".
+Add column labels for cohort ages (B2:E2) from 1 to 4 months.
+Create a formula in cell B3 (and copy to other cells) to calculate retention rates for each cohort age based on starting cohort sizes.
+Part 4: Organize and Document Your Spreadsheet
+
+Executive Summary:
+Briefly summarize results from "conversion_funnel" and "retention_rates" sheets.
+Explain data properties, assumptions used in analysis (data source, timeframe, calculation methods).
+Reorder Sheets:
+Organize sheets according to the provided legend:
+Table of Contents & Executive Summary
+Analytical Results Sheets
+Calculation Sheets
+Raw Data Sheets
+Update the "Table of Contents" with sheet names and descriptions.
+Formatting:
+Apply formatting for readability (number/date formats, borders, bold headers, frozen rows, highlight calculation cells).
