@@ -1,0 +1,79 @@
+Analyzing Return Rates
+
+Calculated Field:
+
+Create a calculated field named "Return Rate" in the Returns table using a formula like:
+SQL
+IF [Returned] = "Yes" THEN 1
+ELSE 0
+END
+Use code with caution.
+
+This assigns a "1" to returned orders and "0" to non-returned orders.
+
+Return Rate Analysis Worksheets:
+
+Here's a breakdown of the worksheets you need to create:
+
+Total Sales vs. Total Returns:
+Visualization: Scatterplot
+X-axis: Total Sales (by product subcategory)
+Y-axis: Total Returns (count or sum, by product subcategory)
+Analysis: This helps identify if high sales volume correlates with high return rates. It might suggest issues like product quality or unclear descriptions for popular products with high returns.
+Return Rate by Product Category:
+Visualization: Bar chart
+X-axis: Product Category
+Y-axis: Average Return Rate (calculated field)
+Analysis: This reveals which product categories have the highest return rates, indicating underlying issues specific to certain product types.
+Return Rate by Customer (excluding single-order customers):
+Visualization: Bar chart
+X-axis: Customer ID
+Y-axis: Average Return Rate (calculated field)
+Filter: Exclude customers with only 1 order
+Analysis: This identifies customers with a history of high return rates, suggesting problems with customer satisfaction or product misuse.
+Return Rate by Geographic Location:
+Visualization: Map
+Color-coding: States/Cities (geographic measure) colored by average return rate
+Analysis: This helps identify geographic regions with higher return rates, suggesting logistical issues or regional variations in customer behavior.
+Return Rate by Time:
+Visualization: Line chart or bar chart
+X-axis: Month/Week (time measure)
+Y-axis: Average Return Rate (calculated field)
+Analysis: This reveals seasonal trends in return rates, which might peak during holidays or specific times of the year.
+Composite Charts (choose two):
+Option 1: Scatterplot with average return rate on Y-axis and colored by product category on X-axis, with additional lines showing average return rate by month/week overlaid.
+Option 2: Bar chart showing return rate by customer segment (e.g., high-spending vs. low-spending) with bars further broken down by product category.
+Analysis: These composite charts provide a more comprehensive view of return rates across multiple factors.
+Building a Dashboard for Monitoring Returns
+
+Mock-up Variations:
+
+Here are three variations for your dashboard mock-up:
+
+Single Page: This layout includes sections for key return rate metrics, a map, and a line chart for trends.
+
+Two Pages:  The first page focuses on high-level metrics and geographic trends, while the second page offers deeper dives by product category, customer segment, and time period.
+
+Interactive Dashboard: This allows users to explore return rates using filters for product category, customer segment, and time period.
+
+Template and Finalized Dashboard:
+
+Create a template in Tableau with empty containers matching your chosen mock-up.
+Add your relevant worksheets to the containers.
+Include titles, markers, and images (if applicable) to enhance clarity.
+Presenting Your Analysis and Dashboard
+
+Story Arc (Captions Only):
+
+Summary: Briefly describe your findings on return rates and root causes.
+Measuring Returns: Discuss the pros and cons of return rate, total return cost, and total return count. Explain when each is most useful.
+Key Root Causes: Highlight the major factors identified as contributing to high return rates.
+Dashboard Components: Briefly explain each chart's purpose and interpretation.
+Dashboard Demonstration: Showcase how to use the dashboard filters to explore return rates.
+Identifying Root Causes with Dashboard: Demonstrate how to use the dashboard to pinpoint potential causes of high return rates.
+Actions Based on Findings: Propose actions Superstore can take to address the identified root causes (e.g., improve product quality, adjust marketing strategies).
+Conclusion & Next Steps: Summarize your findings and recommend implementing the dashboard for ongoing return rate monitoring.
+Presentation (3-5 minutes):
+
+Use screen recording software or create a PDF presentation to deliver your findings.
+By following these steps and incorporating the analysis worksheets into your dashboard
