@@ -1,0 +1,56 @@
+Part 1: Profits & Losses
+
+Identifying Profit & Loss Centers:
+
+Data Analysis: We need access to the Superstore's sales data, ideally including dimensions like product subcategory, region, product ID, and shipping mode.
+Visualization: A PivotTable or heatmap would be helpful. We can calculate profit by subtracting costs from sales for each combination (e.g., subcategory + region). Identify the subcategories and regions with the highest and lowest profits.
+Justification:
+
+The visualization will clearly show the most and least profitable combinations. This helps Superstore focus resources on high-profit areas and potentially adjust pricing or marketing strategies for low-profit areas.
+Products to Stop Selling:
+
+Data Analysis: Calculate the average profit per unit sold for each product. Filter for products with consistently low profits or negative profits.
+Visualization: A bar chart showing average profit per unit sold for all products can highlight low performers.
+Justification:
+
+The visualization will identify products that are consistently unprofitable. Superstore can then consider discontinuing these products, negotiating with suppliers, or optimizing their pricing strategy.
+Product Subcategory Focus:
+
+Data Analysis: Similar to identifying low-profit products, analyze average profit per product subcategory. Identify the top 3 most profitable subcategories and the bottom 3 least profitable.
+Visualization: A bar chart showing average profit per subcategory can be used.
+Justification:
+
+Focusing resources on high-profit subcategories can significantly improve overall profitability. Superstore can invest in marketing and promotions for these subcategories or optimize inventory management. The least profitable subcategories might need a complete reevaluation or potential discontinuation.
+Part 2: Advertising
+
+Identifying Best Advertising Opportunities:
+
+Data Analysis: We need sales data with information like state, month of the year, and average profit per unit sold.
+Visualization: Create a line chart for each state, showing the average profit per month. Identify the 3 states with the highest average profit throughout the year. For these 3 states, analyze which months have the highest average profit.
+Justification:
+
+This analysis identifies states with consistently high profits and specific months within those states where profitability is even higher. Advertising during these peak profit periods in high-profit states is likely to be most effective.
+Calculating Advertising Budget:
+
+Return on Ad Spend (ROAS): For this exercise, assume the Superstore is willing to spend 1/5 of their profits on advertising for a specific state-month combination.
+Calculation: Multiply the average profit per unit sold for that state and month by the total number of units you expect to sell with advertising. Divide this number by 5 to get the maximum advertising budget you'd be willing to spend.
+Justification:
+
+Using ROAS ensures that advertising spend is proportional to the potential profit gain.
+Part 3: Returned Items
+
+Preparing the Data:
+
+Calculated Field: Create a new calculated field in the Returns table. Assign a value of "0" to null values in the "Returned" column and a value of "1" to "Yes" values. This converts "Returned" data into a usable format for analysis.
+High Return Rate Products & Customers:
+
+Visualization 1: Create a bar chart showing the average return rate (calculated field) for each product. This identifies products with the highest return rates.
+Visualization 2: Create a bar chart showing the average return rate for each customer. This identifies customers with the highest return rates.
+Dimension-based Analysis (Profit vs. Return Rate):
+
+Choose a Dimension: Select a relevant dimension like state, shipping mode, or product type.
+Visualization: Create a scatter plot with average profit on the X-axis and average return rate on the Y-axis, colored by the chosen dimension.
+Justification:
+
+The scatter plot will reveal relationships between profit and return rate for different categories within the chosen dimension. For example, a high return rate might be acceptable for high-profit products, but not for low-profit ones. Superstore can use this analysis to decide on potentially discontinuing products or customer segments with high return rates and low profits.
+Remember: These are just initial analyses. Further investigation may be needed before making any final decisions.
